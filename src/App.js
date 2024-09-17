@@ -67,8 +67,8 @@ function App() {
             <br></br>Title: NguyenTH
           </li>
           <li>Never give up</li>
-          <li>Never give up</li>
-          <li>Never give up</li>
+          <li>Ican </li>
+          <li>Really</li>
         </ul>
         <footer>Add another card</footer>
        </div>
