@@ -16,7 +16,7 @@ function App() {
           </li>
           <li>Never give up</li>
           <li>Never give up</li>
-          <li>Never give up</li>
+          <li>Hope</li>
         </ul>
         <footer>Add another card</footer>
        </div>
