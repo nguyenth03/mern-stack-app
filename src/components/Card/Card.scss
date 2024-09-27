@@ -1,6 +1,6 @@
 @import "_setting.scss";
 
-li.task-item{
+li.card-item{
     background-color: white;
     padding: $gap;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -8,7 +8,7 @@ li.task-item{
     &:not(:last-child){//ko phai la ptu li cuoi cung, moi gargin
       margin-bottom: $gap;
     }
-    img{
+    img-card-cover{
       display: block;
       width: calc(100% + 2 * #{$gap});
       margin: -$gap 0 $gap -$gap;
