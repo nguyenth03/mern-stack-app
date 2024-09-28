@@ -1,13 +1,15 @@
 @import "_setting.scss";
 
-li.card-item{
+.card-item{
     background-color: white;
     padding: $gap;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: $card-border-radius;
-    &:not(:last-child){//ko phai la ptu li cuoi cung, moi gargin
-      margin-bottom: $gap;
-    }
+    cursor: pointer;
+    // &:not(:last-child){//ko phai la ptu li cuoi cung, moi gargin
+    //   margin-bottom: $gap;
+    // }
+    margin-bottom: $gap;
     img-card-cover{
       display: block;
       width: calc(100% + 2 * #{$gap});
