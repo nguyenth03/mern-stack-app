@@ -2,8 +2,8 @@
 
 .board-content{
     height: $board-content-height;
+    display: flex;
     // padding: auto;
-    // display: flex;
     // margin: 0 $gap $gap;
     overflow-x: auto;
     overflow: hidden;
@@ -16,6 +16,21 @@
     &::-webkit-scrollbar-thumb{
       background-color: darken($list-bg-color, 15);
       border-radius: 8px;
+    }
+    .add-new-column{
+      width: 250px;
+      height: 32px;
+      line-height: 32px;
+      padding: 4px 0 4px 15px;
+      cursor: pointer;
+      color: white;
+      margin-left: $gap;
+      font-size: 15px;
+      background-color: hsla(0, 0%, 100%, .24);
+      border-radius: $column-border-radius;
+      &:hover{
+        background-color: hsla(0, 0%, 100%, .14);
+      }
     }
     .column-drop-preview {
       background-color: rgba(150, 150, 200, 0.1);
