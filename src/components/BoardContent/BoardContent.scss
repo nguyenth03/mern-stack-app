@@ -7,6 +7,10 @@
     // margin: 0 $gap $gap;
     overflow-x: auto;
     overflow: hidden;
+    &::after{
+      content: '';
+      flex: 0 0 $gap;
+    }
     &::-webkit-scrollbar{
       -webkit-appearance: none;
     }
@@ -14,11 +18,12 @@
       height: 11px;
     }
     &::-webkit-scrollbar-thumb{
-      background-color: darken($list-bg-color, 15);
+      background-color: darken($column-bg-color, 15);
       border-radius: 8px;
     }
     .add-new-column{
       width: 250px;
+      max-width: 250px;
       height: 32px;
       line-height: 32px;
       padding: 4px 0 4px 15px;
@@ -36,5 +41,28 @@
       background-color: rgba(150, 150, 200, 0.1);
       border: 1px dashed #abc;
       margin: 5px 45px 5px 5px;
+    }
+    .enter-new-column{
+      width: 250px;
+      max-width: 250px;
+      background-color: $column-bg-color;
+      line-height: 32px;
+      padding: 4px 0 4px 15px;
+      margin-left: $gap;
+      border-radius: $column-border-radius;
+      input.input-enter-new-column{
+        margin: 5px 0;
+      }
+    }
+    span.cancel-new-column{
+      margin-left: $gap;
+      cursor: pointer;
+      i {
+        font-size: 18px;
+        color: $alert-danger;
+        &:hover {
+          color: darken($alert-danger, 10);
+        }
+      }
     }
   }
