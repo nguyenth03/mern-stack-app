@@ -3,8 +3,8 @@
 .board-content{
     height: $board-content-height;
     display: flex;
-    // padding: auto;
-    // margin: 0 $gap $gap;
+    padding: auto;
+    margin: 0 $gap $gap;
     overflow-x: auto;
     overflow: hidden;
     &::after{
@@ -34,7 +34,7 @@
       background-color: hsla(0, 0%, 100%, .24);
       border-radius: $column-border-radius;
       &:hover{
-        background-color: hsla(0, 0%, 100%, .14);
+        background-color: hsla(0, 0%, 100%, .34);
       }
     }
     .column-drop-preview {
@@ -47,11 +47,14 @@
       max-width: 250px;
       background-color: $column-bg-color;
       line-height: 32px;
-      padding: 4px 0 4px 15px;
+      padding: 4px 10px;
       margin-left: $gap;
       border-radius: $column-border-radius;
       input.input-enter-new-column{
         margin: 5px 0;
+        &:focus{
+          border-color: $input-border-color;
+        }
       }
     }
     span.cancel-new-column{
